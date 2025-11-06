@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.containerBody{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 99.5vh;
+}
+
+.sidebar_Menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 32px;
+    width: inherit;
+    height: 95vh;
+    position: fixed;
+    border-right: 0.5px solid rgba(219, 219, 219, 0.692);
+}
+
+.navbar_Sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.logo_Pinterest img{
+    width: 32px;
+    height: auto;
+}
+
+.navbar_Links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4em;
+}
+
+.navbar_Links .nav_Link, 
+.navbar_Setting, .nav_Link{
+    color: #000;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.navbar_Setting{
+    padding: 24px 0px;
+}
+
+.container_Main{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 110px;
+    width: 1285px;
+}
+
+.containerBody_Navbar{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    position: fixed;
+}
+
+.container_Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    position: fixed;
+    z-index: 10;
+    width: inherit;
+    background-color: #fff;
+    padding: 15px 0px;
+}
+
+.navbar_Searching{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    height: 30px;
+    padding: 16px 14px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+}
+
+.navbar_Searching:hover{
+    background-color: rgba(166, 170, 175, 0.438);
+}
+
+.navbar_Searching i{
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.navbar_Searching input{
+    border: none;
+    outline: none;
+    font-size: 16.5px;
+    background-color: transparent;
+    padding: 8px;
+    width: 100%;
+}
+
+.navbar_Searching:focus{
+    border-color: rgb(23, 94, 248);
+}
+
+.navbar_PerfilUser{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 18px;
+    margin-top: 8px;
+}
+
+.link_Perfil i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.perfil_Options i{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.wrapper_Searching{
+    position: absolute;
+    left: -120px;
+    z-index: 10;
+    width: 120%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.404);
+    display: none;
+}
+
+.wrapper_Searching .content_Searching{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: absolute;
+    left: 120px;
+    top: 0px;
+    background-color: #fff;
+    width: 1220px;
+    height: 450px;
+    border-radius: 0px 0px 12px 12px;
+    padding: 8px 14px;
+    padding-right: 28px;
+    overflow-y: scroll;
+}
+
+.inputRefrechsCaracthers{
+    border: none;
+    border-radius: 12px;
+    padding: 12px 14px;
+    color: rgb(31, 31, 31);
+    background-color: rgba(95, 94, 94, 0.247);
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.closeModalSearching{
+    border: none;
+    border-radius: 50px;
+    padding: 6px ;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: red;
+    cursor: pointer;
+}
+
+.containerRecentSearchUser{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 110px;
+    padding: 0px 12px;
+}
+
+.containerRecentSearchUser header, .containerSomeCategories header{
+    font-weight: 700;
+}
+
+.cardsRecentSearching{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px 16px;
+}
+
+.cardRecentSearching{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.cardsRecentSearching img{
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.containerSomeCategories{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 12px;
+}
+
+.container_Categories_Perfil_Agree{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 14px 14px;
+    margin-top: 80px;
+}
+
+.categories_All span{
+    font-size: 16.5px;
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+    padding: 2.5px 0px;
+    cursor: pointer;
+}
+
+.categorie_Perfil span{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container_Content{
+    display: flex;
+    gap: 2rem 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.containerCard{ /*Contenedor padre de la card*/
+    width: 300px;
+    height: 350px;
+    max-width: 300px;
+    max-height: 350px;
+}
+
+.card_Image { /*Contenedor que muestra la imagen*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('https://images.unsplash.com/photo-1667226243382-6bd1683e288d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D'); 
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    max-width: 100%;
+    max-height: 350px;
+    border-radius: 16px;
+}
+
+.container_Content_Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+    border-radius: 16px;
+    transition: all .3s;
+}
+
+.container_Content_Card .header_Card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    padding: 8px;
+}
+
+.container_Content_Card .perfil_Card{
+    font-size: 16.5px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container_Content_Card .save_Button_Card button{
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+    font-size: 17px;
+    background-color: rgb(233, 50, 50);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container_Content_Card .footer_Card_download{
+    display: flex;
+    justify-content:flex-end;
+    padding: 16px 8px;
+    display: none;
+    border-radius: 16px;
+}
+
+.container_Content_Card .footer_Card_download button{
+    border: none;
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card_Image:hover .header_Card,
+.card_Image:hover .footer_Card_download {
+    display: flex;
+}
+
+.card_Image:hover .container_Content_Card{
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.container_Modal{
+    margin-top: 80px;
+}
+
+.wrapper_Container_Modal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 28px 0px;
+    margin-left: -60px;
+}
+
+.navbar_Modal_Return button{
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.container_View_Card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 900px;
+    padding-left: 30px;
+}
+
+.header_Links_Card, .nav_Info_Image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.header_Links_Card div{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header_Links_Card div:nth-child(1) button{
+    border: none;
+    background-color: transparent;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header_Links_Card div:nth-child(2) button{
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+    font-size: 17px;
+    background-color: rgb(233, 50, 50);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container_Image_Card img{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 32px 3px rgba(0, 0, 0, 0.356);
+}
+
+.nav_Info_Image div:nth-child(2) button{
+    background-color: rgba(166, 170, 175, 0.596);
+    border: none;
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 16.5px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.container_All_Cards_Modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.container_ViewMorePhotos{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+}
+
+.container_ViewMorePhotos .loadingMoewPhotos{
+    border: none;
+    border-radius: 16px;
+    font-size: 16.5px;
+    color: #fff;
+    background-color: rgb(233, 50, 50);
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+.containerLoadingStart{
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #ff0844 0%, #f75050 100%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: loadingStart;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    color: #fff;
+    font-weight: 600;
+    transform: translateY(-1200px);
+}
+
+.containerLoadingStart img{
+   width: 190px;
+   height: 190px;
+   object-fit: cover;
+   background-color: transparent;
+}
+
+.viewModal_Container{
+    display: block;
+}
+
+.closeModal_Container{
+    display: none;
+}
+
+.removeCard{
+    display: none;
+}
+
+.addCard{
+    display: block;
+}
+
+@keyframes loadingStart {
+    0%{
+        transform: translateY(0px);
+    }
+
+    75%{
+        transform: translateY(0px);
+    }
+
+    85%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(-800px);
+    }
+}

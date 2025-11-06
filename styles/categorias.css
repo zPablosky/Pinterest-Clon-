@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.containerBody{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 99.5vh;
+}
+
+.sidebar_Menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 32px;
+    width: inherit;
+    height: 95vh;
+    position: fixed;
+    border-right: 0.5px solid rgba(219, 219, 219, 0.692);
+    background-color: #fff;
+}
+
+.navbar_Sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.logo_Pinterest img{
+    width: 32px;
+    height: auto;
+}
+
+.navbar_Links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4em;
+}
+
+.navbar_Links .nav_Link, 
+.navbar_Setting, .nav_Link{
+    color: #000;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.navbar_Setting{
+    padding: 24px 0px;
+}
+
+.container_Main{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 110px;
+    width: 1285px;
+}
+
+.container_Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: inherit;
+    background-color: #fff;
+    padding: 10px 0px;
+}
+
+.navbar_Searching{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 16px 14px;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+.navbar_Searching:hover{
+    background-color: rgba(166, 170, 175, 0.438);
+}
+
+.navbar_Searching i{
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.navbar_Searching input{
+    border: none;
+    outline: none;
+    font-size: 16.5px;
+    background-color: transparent;
+}
+
+.navbar_PerfilUser{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0px 18px;
+}
+
+.link_Perfil i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.perfil_Options i{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.container_Category_Header{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 105px;
+    padding-right: 24px;
+}
+
+.container_Category_Header .title_category_header span{
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.container_Header_Cards{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.container_Category_Header .container_Cards_Category_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.container_Cards_Category_header .card_Category{
+    background-image: url('https://images.unsplash.com/photo-1667226243382-6bd1683e288d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    width: 420px;
+    height: 280px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.card_Category .card_info_Category{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+}
+
+.card_info_Category .info_Card_Category{
+    padding: 16px 0px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container_Header_Cards .button_View_More{
+    display: flex;
+    justify-content: center;
+}
+
+.container_Header_Cards .button_View_More button{
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 550;
+    background-color: rgba(166, 170, 175, 0.438);
+    cursor: pointer;
+}
+
+.container_FilterCategory_All{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 60px;
+    padding-bottom: 32px;
+}
+
+.container_FilterCategory_All .title_Filter{
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.container_Filter_Cards{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding-right: 24px;
+}
+
+.card_filter{
+    background-image: url('https://images.unsplash.com/photo-1667226243382-6bd1683e288d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    width: 304px;
+    height: 100px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.card_filter .card_filter_container_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+}
+
+.card_filter_container_info .info_card_filter{
+    color: #fff;
+    font-size: 16.5px;
+    font-weight: 600;
+}

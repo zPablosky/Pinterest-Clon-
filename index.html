@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest | Pablodev</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="/src/logo.png">
+</head>
+<body>
+    
+    <div class="containerLoadingStart">
+        <div class="wrapperLoadingImg">
+            <div class="loadingBoard">
+                <img src="/src/logo.png" alt="">
+            </div>
+        </div>
+        <h1>Bienvendios a Pinterest</h1>
+    </div>
+
+   <div class="containerBody">
+        <div class="sidebar_Menu">
+            <div class="navbar_Sidebar">
+                <a href="/index.html">
+                    <div class="logo_Pinterest">
+                        <img src="/src/logo.png" alt="logo de Pinterest">
+                    </div>
+                 </a>
+
+                <div class="navbar_Links">
+                    <a href="/index.html">
+                        <div class="nav_Link">
+                            <i class="ri-home-6-fill"></i>
+                        </div>
+                    </a>
+                    <div class="nav_Link">
+                        <i class="ri-gallery-view-2"></i>
+                    </div>
+                    <a href="/src/pages/categorias.html">
+                        <div class="nav_Link">
+                            <i class="ri-filter-line"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar_Setting">
+                <div class="nav_Link">
+                    <i class="ri-settings-2-line"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_Main">
+            <div class="containerBody_Navbar">
+                <div class="container_Navbar">
+                    <div class="navbar_Searching">
+                        <div class="searchButtonActive" style="cursor: pointer;">
+                            <i class="ri-search-line"></i>
+                        </div>
+                        <input type="text" placeholder="Buscar" id="inputSearchingImage">
+                    </div>
+    
+                    <div class="navbar_PerfilUser">
+                        <div class="link_Perfil">
+                            <i class="ri-user-line"></i>
+                        </div>
+    
+                        <div class="perfil_Options">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper_Searching">
+                    <div class="content_Searching">
+                        <div class="container_Navbar">
+                            <div tabindex="0" class="navbar_Searching" style="border: 2px solid rgb(23, 94, 248); background-color: rgba(166, 170, 175, 0.438);">
+                                <div class="searchButtonActive" style="cursor: pointer;">
+                                    <i class="ri-search-line"></i>
+                                </div>
+                                <input type="text" placeholder="Buscar" id="inputSearchingImage" style="background-color: transparent;">
+
+                                <button class="inputRefrechsCaracthers">Cancelar</button>
+                            </div>
+
+                            <button class="closeModalSearching"><i class="ri-close-large-fill"></i></button>
+                        </div>
+
+                        <div class="containerRecentSearchUser">
+                            <header>
+                                Busquedas Recientes
+                            </header>
+
+                            <div class="cardsRecentSearching">
+                                <div class="cardRecentSearching">
+                                    <img src="https://images.unsplash.com/photo-1598133894008-61f7fdb8cc3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTc0Njl8MHwxfHNlYXJjaHw2fHxkb2dzfGVufDB8fHx8MTc2MjA5NTk4MHww&ixlib=rb-4.1.0&q=80&w=1080" alt="">
+                                    <span>
+                                        dogs
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="containerSomeCategories">
+                            <header>
+                                Que deseas buscar
+                            </header>
+
+                            <div class="cardsRecentSearching">
+                                <div class="cardRecentSearching">
+                                    <img src="https://images.unsplash.com/photo-1500622944204-b135684e99fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTc0Njl8MHwxfHNlYXJjaHwxfHxOYXR1cmFsZXxlbnwwfHx8fDE3NjIxMjYyNzd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="">
+                                    <span>
+                                        Naturaleza
+                                    </span>
+                                </div>
+                                <div class="cardRecentSearching">
+                                    <img src="https://images.unsplash.com/photo-1551184451-76b762941ad6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTc0Njl8MHwxfHNlYXJjaHwxfHxCZWxsZXphfGVufDB8fHx8MTc2MjEyNjM2NXww&ixlib=rb-4.1.0&q=80&w=1080" alt="">
+                                    <span>
+                                        Belleza
+                                    </span>
+                                </div>
+                                <div class="cardRecentSearching">
+                                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTc0Njl8MHwxfHNlYXJjaHwzfHxQYWlzYWplfGVufDB8fHx8MTc2MjEyNjQ4MHww&ixlib=rb-4.1.0&q=80&w=1080" alt="">
+                                    <span>
+                                        Paisaje
+                                    </span>
+                                </div>
+                                <div class="cardRecentSearching">
+                                    <img src="https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTc0Njl8MHwxfHNlYXJjaHwxfHxBcnR8ZW58MHx8fHwxNzYyMTI2NTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="">
+                                    <span>
+                                        Arte
+                                    </span>
+                                </div>
+                                <div class="cardRecentSearching">
+                                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTc0Njl8MHwxfHNlYXJjaHwyfHxDaXR5fGVufDB8fHx8MTc2MjEyNjU5NXww&ixlib=rb-4.1.0&q=80&w=1080" alt="">
+                                    <span>
+                                        Ciudad
+                                    </span>
+                                </div>
+                                <div class="cardRecentSearching">
+                                    <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTc0Njl8MHwxfHNlYXJjaHw0fHxGb25kb3MlMjBkZSUyMHBhbnRhbGxhfGVufDB8fHx8MTc2MjEyNjc0M3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="">
+                                    <span>
+                                        Fondos de pantalla
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_Categories_Perfil_Agree">
+                <div class="categories_All">
+                    <span>Todos</span>
+                </div>
+
+                <div class="categorie_Perfil">
+                    <span>
+                        mi perfil
+                    </span>
+                </div>
+            </div>
+
+            <div class="container_Content">
+                
+            </div>
+
+            <div class="container_ViewMorePhotos">
+                <button class="loadingMoewPhotos">Cargar Mas Fotos</button>
+            </div>
+
+            <div class="container_Modal" >
+                <div class="wrapper_Container_Modal">
+                    <div class="container_View_Card">
+                        <div class="header_Links_Card">
+                            <div>
+                                <button class="return_Home_nav"><i class="ri-arrow-left-long-line"></i></button>
+                                <button><i class="ri-heart-line"></i></button>
+                                <button><i class="ri-upload-2-line"></i></button>
+                                <button><i class="ri-more-line"></i></button>
+                            </div>
+
+                            <div>
+                                <button>Guardar</button>
+                            </div>
+                        </div>
+
+                        <div class="container_Image_Card">
+                            <img 
+                            src="https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4M" alt="" class="imageModalView">
+                        </div>
+
+                        <div class="container_Info_Card_Image">
+                            <div class="nav_Info_Image">
+                                <div>
+                                    <span class="titleImageModal">Titutlo de la Imagen</span>
+                                </div>
+
+                                <div>
+                                    <button>Visitar sitio</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container_All_Cards_Modal">
+                    <!--<div class="card_Image">
+                        <div class="container_Content_Card">
+                            <div class="header_Card">
+                                <div class="perfil_Card">
+                                    mi perfil
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+        
+                                <div class="save_Button_Card">
+                                    <button>Guardar</button>
+                                </div>
+                            </div>
+        
+                            <div class="footer_Card_download">
+                                <button>
+                                    <i class="ri-upload-2-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/index.js"></script>
+</body>
+</html>
